@@ -1,0 +1,76 @@
+#footer {
+  padding: 70px 0 0;
+  background-color: var(--color-background);
+  position: relative;
+}
+#footer nav {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+#footer nav .footer-logo {
+  margin-bottom: 50px;
+  display: block;
+  width: max-content;
+  height: max-content;
+}
+#footer nav .footer-logo image {
+  aspect-ratio: 149/28;
+  object-fit: contain;
+}
+#footer nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+#footer nav ul li {
+  margin-bottom: 15px;
+}
+#footer nav ul li .title {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  color: var(--color-white);
+  margin-bottom: 36px;
+}
+#footer nav ul li a {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ccc;
+  transition: all 0.3s;
+}
+#footer nav ul li a:hover {
+  color: var(--color-primary);
+}
+#footer .copyright {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  padding-top: 30px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ccc;
+  position: relative;
+}
+#footer .copyright a {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #ddd;
+  transition: all 0.3s;
+}
+#footer .copyright a:hover {
+  text-decoration: underline !important;
+}
+#footer .icon-back-to-top {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  transform: translateY(50%);
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=footer.css.map */
