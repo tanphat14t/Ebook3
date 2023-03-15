@@ -1,0 +1,77 @@
+#author {
+    padding: 140px 190px 100px;
+    background-color: #e2e2e2;
+    background-image: url("https://themes.muffingroup.com/be/ebook3/wp-content/uploads/2021/04/ebook3-section-bg1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+#author .author-content__name {
+    position: relative;
+    margin-bottom: 28px;
+}
+#author .author-content__name::before {
+    background-color: var(--color-white);
+    width: 78px;
+    height: 40px;
+    min-height: 0px;
+    min-width: 0px;
+    border-radius: 20px;
+    transform-origin: 50% 50%;
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    left: -20px;
+}
+#author .author-content__name h4 {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--color-background);
+    text-transform: uppercase;
+    z-index: 2;
+    position: relative;
+}
+#author .author-content__title {
+    margin-bottom: 34px;
+}
+#author .author-content__title h2 {
+    font-size: 48px;
+    line-height: 52px;
+    font-weight: 700;
+    font-family: var(--font-seconds);
+    color: var(--color-background);
+}
+#author .author-content__subtitle {
+    margin-bottom: 30px;
+}
+#author .author-content__subtitle h3 {
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    color: var(--color-background);
+    font-family: var(--font-seconds);
+}
+#author .author-content__desc {
+    margin-bottom: 30px;
+}
+#author .author-content__desc p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    color: var(--color-background);
+    width: 50%;
+}
+#author .box-social {
+    gap: 10px;
+}
+#author .box-social a {
+    margin: 0 10px;
+    aspect-ratio: 40/40;
+    width: 40px;
+}
+#author .box-social a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
