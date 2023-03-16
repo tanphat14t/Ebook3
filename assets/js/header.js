@@ -76,3 +76,13 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// back to top 
+
+const backButton = document.querySelector('.icon-back-to-top');
+
+backButton.addEventListener('click', function(e){
+    // do something
+    window.scrollTo(0, 0);
+
+});
