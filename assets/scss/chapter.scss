@@ -1,0 +1,130 @@
+#chapter {
+  padding: 140px 0;
+  background-color: #f0f2f5;
+  background-image: url("../images/ebook3-section-bg3.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  .wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+  .chapter-top {
+    display: flex;
+    gap: 85px;
+    .chapter-content {
+      max-width: 375px;
+      width: 100%;
+      margin-bottom: 80px;
+      &__subtitle {
+        position: relative;
+        margin-bottom: 30px;
+
+        &::before {
+          background-color: var(--color-white);
+          width: 78px;
+          height: 40px;
+          min-height: 0px;
+          min-width: 0px;
+          border-radius: 20px;
+          transform-origin: 50% 50%;
+          color: var(--color-background);
+          content: "";
+          position: absolute;
+          z-index: 1;
+          top: -8px;
+          left: -20px;
+        }
+        h4 {
+          font-size: 16px;
+          line-height: 26px;
+          font-weight: 500;
+          position: relative;
+          z-index: 2;
+          font-family: var(--font-primary);
+          text-transform: uppercase;
+          color: var(--color-background);
+        }
+      }
+      &__title {
+        h2 {
+          font-family: var(--font-seconds);
+          font-size: 48px;
+          font-weight: 700;
+          line-height: 52px;
+        }
+        padding-bottom: 80px;
+        border-bottom: 1px solid var(--color-black);
+      }
+    }
+    .chapter-desc {
+      p {
+        font-family: var(--font-seconds);
+        font-size: 34px;
+        font-weight: 500;
+        line-height: 44px;
+        color: var(--color-background);
+      }
+    }
+  }
+  .chapter-bottom {
+    display: flex;
+    gap: 85px;
+    .chapter-image {
+      max-width: 385px;
+      width: 100%;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .chapter-info {
+      &-content {
+        margin-bottom: 55px;
+        p {
+          font-family: var(--font-primary);
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 26px;
+          color: var(--color-background);
+          margin-bottom: 30px;
+        }
+      }
+      &-button {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        .box-price {
+          .price {
+            font-family: var(--font-seconds);
+            font-size: 34px;
+            font-weight: 500;
+            line-height: 44px;
+            color: var(--color-orange);
+          }
+          .text {
+            font-family: var(--font-primary);
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 26px;
+            color: var(--color-background);
+          }
+        }
+        .button-down {
+          display: inline-block;
+          border-radius: 24px;
+          font-family: var(--font-primary);
+          font-weight: 500;
+          line-height: 16px;
+          padding: 12px 40px;
+          color: var(--color-white);
+          background-color: var(--color-orange);
+          transition: all 0.3s;
+          &:hover {
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+  }
+}

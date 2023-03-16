@@ -1,0 +1,125 @@
+#chapter {
+  padding: 140px 0;
+  background-color: #f0f2f5;
+  background-image: url("../images/ebook3-section-bg3.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+#chapter .wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+#chapter .chapter-top {
+  display: flex;
+  gap: 85px;
+}
+#chapter .chapter-top .chapter-content {
+  max-width: 375px;
+  width: 100%;
+  margin-bottom: 80px;
+}
+#chapter .chapter-top .chapter-content__subtitle {
+  position: relative;
+  margin-bottom: 30px;
+}
+#chapter .chapter-top .chapter-content__subtitle::before {
+  background-color: var(--color-white);
+  width: 78px;
+  height: 40px;
+  min-height: 0px;
+  min-width: 0px;
+  border-radius: 20px;
+  transform-origin: 50% 50%;
+  color: var(--color-background);
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: -8px;
+  left: -20px;
+}
+#chapter .chapter-top .chapter-content__subtitle h4 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 500;
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-primary);
+  text-transform: uppercase;
+  color: var(--color-background);
+}
+#chapter .chapter-top .chapter-content__title {
+  padding-bottom: 80px;
+  border-bottom: 1px solid var(--color-black);
+}
+#chapter .chapter-top .chapter-content__title h2 {
+  font-family: var(--font-seconds);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 52px;
+}
+#chapter .chapter-top .chapter-desc p {
+  font-family: var(--font-seconds);
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 44px;
+  color: var(--color-background);
+}
+#chapter .chapter-bottom {
+  display: flex;
+  gap: 85px;
+}
+#chapter .chapter-bottom .chapter-image {
+  max-width: 385px;
+  width: 100%;
+}
+#chapter .chapter-bottom .chapter-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#chapter .chapter-bottom .chapter-info-content {
+  margin-bottom: 55px;
+}
+#chapter .chapter-bottom .chapter-info-content p {
+  font-family: var(--font-primary);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  color: var(--color-background);
+  margin-bottom: 30px;
+}
+#chapter .chapter-bottom .chapter-info-button {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+#chapter .chapter-bottom .chapter-info-button .box-price .price {
+  font-family: var(--font-seconds);
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 44px;
+  color: var(--color-orange);
+}
+#chapter .chapter-bottom .chapter-info-button .box-price .text {
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 26px;
+  color: var(--color-background);
+}
+#chapter .chapter-bottom .chapter-info-button .button-down {
+  display: inline-block;
+  border-radius: 24px;
+  font-family: var(--font-primary);
+  font-weight: 500;
+  line-height: 16px;
+  padding: 12px 40px;
+  color: var(--color-white);
+  background-color: var(--color-orange);
+  transition: all 0.3s;
+}
+#chapter .chapter-bottom .chapter-info-button .button-down:hover {
+  opacity: 0.8;
+}
+
+/*# sourceMappingURL=chapter.css.map */
