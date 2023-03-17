@@ -861,6 +861,42 @@ header#header {
   object-fit: cover;
 }
 
+#platforms {
+  padding-top: 140px;
+  padding-bottom: 100px;
+  background-color: #d88a24;
+  background-image: url("../images/ebook3-section-bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+#platforms .wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+#platforms .wrapper .platforms-title {
+  text-align: center;
+  margin-bottom: 114px;
+}
+#platforms .wrapper .platforms-title h2 {
+  font-size: 48px;
+  line-height: 52px;
+  font-weight: 700;
+  font-family: var(--font-seconds);
+  color: var(--color-white);
+}
+#platforms .wrapper .platforms-list {
+  gap: 146px;
+  margin-bottom: 40px;
+}
+#platforms .wrapper .platforms-list .platforms-item a img {
+  transform: scale(1);
+  transition: all 0.4s;
+}
+#platforms .wrapper .platforms-list .platforms-item a:hover img {
+  transform: scale(1.1);
+}
+
 #footer {
   padding: 70px 0 0;
   background-color: var(--color-background);
