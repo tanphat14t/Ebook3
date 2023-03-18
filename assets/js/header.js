@@ -44,12 +44,13 @@ links.forEach((link, index) => {
 
         if (index === 0) {
             // nếu thẻ a đang được click là thẻ đầu tiên trong menu thì scroll lên đầu trang
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            window.scrollTo({ top: 0, behavior: 'smooth', });
         } else {
             // Scroll đến vị trí muốn đến
             window.scrollTo({
                 top: sectionTop,
-                behavior: 'smooth'
+                behavior: 'smooth',
+                duration: 1000,
             });
         }
     });
@@ -101,3 +102,4 @@ iconClose, overlay.addEventListener('click', function () {
     overlay.classList.remove('is-show');
     menuMobile.classList.remove('is-show');
 });
+

@@ -1,99 +1,151 @@
 #order {
-  .wrapper {
-    max-width: 1080px;
-    margin: 0 auto;
-  }
-  .order-container {
-    display: flex;
-    display: flex;
-    align-items: center;
-    gap: 30px;
-  }
-  .order-content {
-    max-width: 630px;
-    width: 100%;
-    &__subtitle {
-      position: relative;
-      margin-bottom: 48px;
-      &::before {
-        background-color: var(--color-white);
-        width: 78px;
-        height: 40px;
-        min-height: 0px;
-        min-width: 0px;
-        border-radius: 20px;
-        transform-origin: 50% 50%;
-        content: "";
-        position: absolute;
-        z-index: -1;
-        top: -10px;
-        left: -20px;
-      }
-      h4 {
-        font-size: 16px;
-        line-height: 25px;
-        font-weight: 500;
-        color: var(--color-background);
-        text-transform: uppercase;
-      }
+    padding: 140px 0;
+    background-color: var(--color-white);
+    .wrapper {
+        max-width: 1080px;
+        margin: 0 auto;
+        @media (max-width: 991px) {
+            padding: 0 25px;
+        }
     }
-    &__title {
-      margin-bottom: 36px;
-      h2 {
-        font-size: 64px;
-        line-height: 72px;
-        font-weight: 700;
-        font-family: var(--font-seconds);
-        color: var(--color-background);
-      }
+    .order-container {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        @media (max-width: 768px) {
+            flex-wrap: wrap;
+        }
     }
-    &__desc {
-      margin-bottom: 44px;
-      p {
-        font-size: 24px;
-        line-height: 34px;
-        font-weight: 400;
-        color: var(--color-background);
-      }
+    .order-content {
+        max-width: 630px;
+        width: 100%;
+        @media (max-width: 768px) {
+            max-width: 100%;
+            text-align: center;
+        }
+        &__subtitle {
+            position: relative;
+            margin-bottom: 48px;
+            @media (max-width: 768px) {
+                margin-bottom: 16px;
+            }
+            &::before {
+                background-color: var(--color-white);
+                width: 78px;
+                height: 40px;
+                min-height: 0px;
+                min-width: 0px;
+                border-radius: 20px;
+                transform-origin: 50% 50%;
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: -10px;
+                left: -20px;
+            }
+            h4 {
+                font-size: 16px;
+                line-height: 25px;
+                font-weight: 500;
+                color: var(--color-background);
+                text-transform: uppercase;
+                @media (max-width: 768px) {
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+        }
+        &__title {
+            margin-bottom: 36px;
+            @media (max-width: 768px) {
+                margin-bottom: 16px;
+            }
+            h2 {
+                font-size: 64px;
+                line-height: 72px;
+                font-weight: 700;
+                font-family: var(--font-seconds);
+                color: var(--color-background);
+                @media (max-width: 768px) {
+                    font-size: 36px;
+                    line-height: 39px;
+                }
+            }
+        }
+        &__desc {
+            margin-bottom: 44px;
+            @media (max-width: 768px) {
+                margin-bottom: 26px;
+            }
+            p {
+                font-size: 24px;
+                line-height: 34px;
+                font-weight: 400;
+                color: var(--color-background);
+                @media (max-width: 768px) {
+                    font-size: 14px;
+                    line-height: 20px;
+                }
+            }
+        }
+        &__button {
+            gap: 60px;
+            align-items: center;
+            @media (max-width: 768px) {
+                justify-content: center;
+                flex-direction: column;
+                gap: 40px;
+                margin-bottom: 40px;
+            }
+        }
+        .box-price {
+            .price {
+                font-size: 36px;
+                line-height: 48px;
+                font-weight: 600;
+                color: var(--color-orange);
+                @media (max-width: 768px) {
+                    font-size: 26px;
+                    line-height: 33px;
+                }
+            }
+            .text {
+                font-size: 16px;
+                line-height: 20px;
+                font-weight: 400;
+                color: var(--color-background);
+                @media (max-width: 768px) {
+                    font-size: 13px;
+                    line-height: 20px;
+                }
+            }
+        }
+        .button-order {
+            display: inline-block;
+            border-radius: 24px;
+            font-family: var(--font-primary);
+            font-weight: 500;
+            line-height: 16px;
+            padding: 12px 40px;
+            color: var(--color-white);
+            background-color: var(--color-orange);
+            transition: all 0.3s;
+            @media (max-width: 768px) {
+                font-size: 16px;
+            }
+            &:hover {
+                opacity: 0.8;
+            }
+        }
     }
-    &__button {
-      gap: 60px;
-      align-items: center;
+    .order-image {
+        @media (max-width: 767px) {
+            width: 635px;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
-    .box-price {
-      .price {
-        font-size: 36px;
-        line-height: 48px;
-        font-weight: 600;
-        color: var(--color-orange);
-      }
-      .text {
-        font-size: 16px;
-        line-height: 20px;
-        font-weight: 400;
-        color: var(--color-background);
-      }
-    }
-    .button-order {
-      display: inline-block;
-      border-radius: 24px;
-      font-family: var(--font-primary);
-      font-weight: 500;
-      line-height: 16px;
-      padding: 12px 40px;
-      color: var(--color-white);
-      background-color: var(--color-orange);
-      transition: all 0.3s;
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  }
-  .order-image {
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-  }
 }

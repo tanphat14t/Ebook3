@@ -74,5 +74,12 @@
         height: 20px;
         transform: translateY(50%);
         cursor: pointer;
+        @media (max-width: 768px) {
+            bottom: 90%;
+            right: 50%;
+            width: 20px;
+            height: 20px;
+            transform: translateY(50%);
+        }
     }
 }

@@ -99,6 +99,9 @@ header#header {
         &:hover {
             background-color: var(--color-button-hover);
         }
+        @media(max-width: 768px){
+          display: none;
+        }
     }
 }
 #header-mobile {
