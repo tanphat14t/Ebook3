@@ -81,8 +81,23 @@ window.addEventListener('scroll', () => {
 
 const backButton = document.querySelector('.icon-back-to-top');
 
-backButton.addEventListener('click', function(e){
+backButton.addEventListener('click', function (e) {
     // do something
     window.scrollTo(0, 0);
 
+});
+
+// open menu 
+const hamburgerBtn = document.querySelector('.btn-hamburger img');
+const overlay = document.querySelector('#header-mobile');
+const menuMobile = document.querySelector('#header-mobile .menu');
+const iconClose = document.querySelector('#header-mobile .icon-close img');
+
+hamburgerBtn.addEventListener('click', function () {
+    overlay.classList.toggle('is-show');
+    menuMobile.classList.toggle('is-show');
+});
+iconClose, overlay.addEventListener('click', function () {
+    overlay.classList.remove('is-show');
+    menuMobile.classList.remove('is-show');
 });
