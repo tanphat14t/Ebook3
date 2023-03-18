@@ -6,15 +6,32 @@
   .wrapper {
     max-width: 1080px;
     margin: 0 auto;
+    @media (max-width: 768px) {
+      padding: 0 60px;
+    }
   }
   .book-container {
     display: flex;
     align-items: center;
     gap: 80px;
+    @media (max-width: 991px) {
+      gap: 50px;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
   .book-content {
     margin-top: 60px;
     padding-right: 70px;
+    @media (max-width: 768px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 0;
+      padding: 0 25px;
+    }
   }
   .book-content__subtitle {
     position: relative;
@@ -41,6 +58,9 @@
       text-transform: uppercase;
       z-index: 2;
       position: relative;
+      @media (max-width: 768px) {
+        font-size: 13px;
+      }
     }
   }
   .book-content__title {
@@ -51,6 +71,9 @@
       font-weight: 700;
       font-family: var(--font-seconds);
       color: var(--color-background);
+      @media (max-width: 768px) {
+        font-size: 36px;
+      }
     }
   }
   .book-content__desc {
@@ -60,6 +83,10 @@
       line-height: 34px;
       font-weight: 400;
       color: var(--color-background);
+      @media (max-width: 768px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
   .book-content__button {
@@ -91,11 +118,19 @@
   gap: 45px;
   justify-content: center;
   padding-left: 10px;
+  @media (max-width: 991px) {
+    flex-direction: column;
+    width: 100%;
+    gap: 14px;
+  }
 }
 .box-left__image {
   aspect-ratio: 225 / 264;
   width: 225px;
   margin-bottom: 10px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   img {
     width: 100%;
     height: 100%;
@@ -106,6 +141,7 @@
   background-color: #ffffff;
   padding: 40px 0 25px;
   border-radius: 30px;
+
   h3 {
     color: #1f58ff;
     font-family: var(--font-seconds);
@@ -126,6 +162,9 @@
 .box-right__image {
   aspect-ratio: 225 / 264;
   width: 225px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   img {
     width: 100%;
     height: 100%;

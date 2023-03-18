@@ -1,41 +1,44 @@
 #platforms {
-    padding-top: 140px;
-    padding-bottom: 100px;
-    background-color: #d88a24;
-    background-image: url("../images/ebook3-section-bg2.jpg");
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
-    .wrapper {
-        max-width: 1080px;
-        margin: 0 auto;
-        .platforms-title {
-            text-align: center;
-            margin-bottom: 114px;
-            h2 {
-                font-size: 48px;
-                line-height: 52px;
-                font-weight: 700;
-                font-family: var(--font-seconds);
-                color: var(--color-white);
-            }
-        }
-        .platforms-list{
-            gap: 146px;
-            margin-bottom: 40px;
-            .platforms-item{
-                a{
-                    img{
-                        transform: scale(1);
-                        transition: all 0.4s;
-                    }
-                    &:hover{
-                        img{
-                            transform: scale(1.1);
-                        }
-                    }
-                }
-            }
-        }
+  padding-top: 140px;
+  padding-bottom: 100px;
+  background-color: #d88a24;
+  background-image: url("../images/ebook3-section-bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  .wrapper {
+    max-width: 1080px;
+    margin: 0 auto;
+    .platforms-title {
+      text-align: center;
+      margin-bottom: 114px;
+      h2 {
+        font-size: 48px;
+        line-height: 52px;
+        font-weight: 700;
+        font-family: var(--font-seconds);
+        color: var(--color-white);
+      }
     }
+    .platforms-list {
+      gap: 146px;
+      margin-bottom: 40px;
+      @media (max-width: 991px) {
+        gap: 85px;
+      }
+      .platforms-item {
+        a {
+          img {
+            transform: scale(1);
+            transition: all 0.4s;
+          }
+          &:hover {
+            img {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+    }
+  }
 }

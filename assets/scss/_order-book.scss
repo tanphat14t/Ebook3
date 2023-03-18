@@ -1,7 +1,12 @@
 #order {
+  padding: 140px 0;
+  background-color: var(--color-white);
   .wrapper {
     max-width: 1080px;
     margin: 0 auto;
+    @media (max-width: 991px) {
+      padding: 0 25px;
+    }
   }
   .order-container {
     display: flex;

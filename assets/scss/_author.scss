@@ -4,6 +4,9 @@
   background-image: url("https://themes.muffingroup.com/be/ebook3/wp-content/uploads/2021/04/ebook3-section-bg1.jpg");
   background-repeat: no-repeat;
   background-position: center center;
+  @media (max-width: 991px) {
+    padding-left: 30px;
+  }
   .wrapper {
     max-width: 1080px;
     margin: 0 auto;
