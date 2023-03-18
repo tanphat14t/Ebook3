@@ -1062,7 +1062,7 @@ header#header {
   padding-bottom: 90px;
 }
 #footer nav .footer-logo {
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
   display: block;
   width: max-content;
   height: max-content;
@@ -1072,8 +1072,10 @@ header#header {
   object-fit: contain;
 }
 #footer nav ul {
+  width: max-content;
   list-style-type: none;
-  padding-left: 0;
+  padding-left: 16px;
+  margin: 0 auto;
 }
 #footer nav ul li {
   margin-bottom: 15px;
@@ -1105,6 +1107,7 @@ header#header {
   font-weight: 400;
   color: #ccc;
   position: relative;
+  text-align: center;
 }
 #footer .copyright a {
   font-size: 18px;

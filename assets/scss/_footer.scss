@@ -7,7 +7,7 @@
         margin: 0 auto;
         padding-bottom: 90px;
         .footer-logo {
-            margin-bottom: 50px;
+            margin: 0 auto 50px;
             display: block;
             width: max-content;
             height: max-content;
@@ -17,8 +17,10 @@
             }
         }
         ul {
+            width: max-content;
             list-style-type: none;
-            padding-left: 0;
+            padding-left: 16px;
+            margin: 0 auto;
             li {
                 margin-bottom: 15px;
 
@@ -52,18 +54,19 @@
         font-weight: 400;
         color: #ccc;
         position: relative;
-        a{
+        text-align: center;
+        a {
             font-size: 18px;
             line-height: 26px;
             font-weight: 400;
             color: #ddd;
             transition: all 0.3s;
-            &:hover{
+            &:hover {
                 text-decoration: underline !important;
             }
         }
     }
-    .icon-back-to-top{
+    .icon-back-to-top {
         position: absolute;
         bottom: 50%;
         right: 0;
@@ -71,6 +74,5 @@
         height: 20px;
         transform: translateY(50%);
         cursor: pointer;
-        
     }
 }
